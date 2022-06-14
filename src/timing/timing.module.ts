@@ -6,4 +6,4 @@ import { TimingService } from './timing.service';
   providers: [TimingService, Logger],
   exports: [TimingService],
 })
-export class SharedModule {}
+export class TimingModule { }

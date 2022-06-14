@@ -4,7 +4,7 @@ import { Logger } from '@nestjs/common';
 import { TasksService } from './tasks.service';
 import { StationsService } from 'src/stations/stations.service';
 import { WeatherService } from 'src/weather/weather.service';
-import { TimingService } from 'src/shared/timing.service';
+import { TimingService } from 'src/timing/timing.service';
 
 describe('tasks service', () => {
   let tasksService: TasksService;

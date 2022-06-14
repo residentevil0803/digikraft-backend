@@ -3,7 +3,7 @@ import { Cron, CronExpression } from '@nestjs/schedule';
 
 import { StationsService } from 'src/stations/stations.service';
 import { WeatherService } from 'src/weather/weather.service';
-import { TimingService } from 'src/shared/timing.service';
+import { TimingService } from 'src/timing/timing.service';
 
 @Injectable()
 export class TasksService {
