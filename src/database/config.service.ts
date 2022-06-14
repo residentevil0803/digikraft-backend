@@ -12,6 +12,5 @@ export class DBUri {
     const dbname = this.env.get('MONGODB_DBNAME');
 
     this.uri = `mongodb+srv://${username}:${password}@${host}/${dbname}`;
-    // this.uri = "mongodb://localhost:27017/digikraft";
   }
 }
