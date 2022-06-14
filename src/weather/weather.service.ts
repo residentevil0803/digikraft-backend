@@ -66,24 +66,8 @@ export class WeatherService {
 
 
   async getDBWeatherInfo(atDateTime: Date) {
-    // var startDate = moment(atDateTime);
-    // var startDate = moment(atDateTime).format("YYYY-MM-DDTHH:mm:ss"); //req.params.startTime = 2016-09-25 00:00:00
-    // var endDate = moment(atDateTime).format("YYYY-MM-DDTHH:mm:ss"); //req.params.endTime = 2016-09-25 01:00:00
-
-    // let today = atDateTime.toLocaleDateString("fr-CA").split('/').join('-');
-    // let seconds = atDateTime.getSeconds();
-    // let minutes = atDateTime.getMinutes();
-    // let hour = atDateTime.getHours();
-    // var startDate = {
-    //   '$gte': today + "T" + hour + ":00:00.000Z",
-    //   '$lt': today + "T" + hour + ":59:59.999Z"
-    // }
-
-    // const weather = await this.weatherModel.find();
-
     const weather = await this.weatherModel.findOne(
       queryExprByDate(atDateTime),
-      // { date: startDate },
       {
         _id: 0,
         __v: 0,

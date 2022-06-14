@@ -44,7 +44,6 @@ export class TasksService {
       date: date,
       ...station
     }));
-    // console.log(processedStations);
 
     return this.stationsService.storeStationsInfo(processedStations);
   }
