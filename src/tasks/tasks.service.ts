@@ -14,7 +14,7 @@ export class TasksService {
     private readonly logger: Logger,
   ) { }
 
-  @Cron(CronExpression.EVERY_30_SECONDS, { timeZone: 'America/New_York' })
+  @Cron(CronExpression.EVERY_HOUR, { timeZone: 'America/New_York' })
   async updateStationsAndWeatherInfo() {
     this.logger.log('Updating stations and weather info');
 
